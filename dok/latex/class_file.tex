@@ -1,0 +1,151 @@
+\hypertarget{class_file}{\section{Dokumentacja klasy File}
+\label{class_file}\index{File@{File}}
+}
+
+
+Klasa \hyperlink{class_file}{File} -\/ obiekty tej klasy przechowują informacje o pliku z którego są wczytywane dane.  
+
+
+
+
+{\ttfamily \#include $<$file.\+h$>$}
+
+Diagram dziedziczenia dla File\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_file}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_file_a55683b67c0f7f53d4f2ee544587a1478}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em get\+Name -\/ metoda pobiera nazwę pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_file_a1a2f0af57b4cb416d07b4c7f4a1ef04a}{set\+Name} (Q\+String \+\_\+name)
+\begin{DoxyCompactList}\small\item\em set\+Name -\/ metoda ustawia nazwę pliku \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_file_a1fdbcf449f0e8365b3d5cf003909b1b5}{get\+File\+Path} ()
+\begin{DoxyCompactList}\small\item\em get\+File\+Path -\/ metoda pobiera ścieżkę do pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_file_ad7216b449a5868da61388cde79070d6f}{set\+File\+Path} (Q\+String \+\_\+path)
+\begin{DoxyCompactList}\small\item\em set\+File\+Path -\/ metoda ustawia ścieżkę do pliku \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_file_ac80dd9634f10f53494c4fd5265483c21}{get\+Content} ()
+\begin{DoxyCompactList}\small\item\em get\+Content -\/ metoda pobiera zawartość pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_file_a38cb05c7dde38d6bd8abb62e85e42404}{set\+Content} (Q\+String \+\_\+content)
+\begin{DoxyCompactList}\small\item\em set\+Content -\/ metoda ustawia zawartość pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_file_ad5ee1de5d6d6c5b792f3b357993f08fc}{Q\+String \hyperlink{class_file_ad5ee1de5d6d6c5b792f3b357993f08fc}{file\+Name}}\label{class_file_ad5ee1de5d6d6c5b792f3b357993f08fc}
+
+\begin{DoxyCompactList}\small\item\em file\+Name -\/ nazwa pliku \end{DoxyCompactList}\item 
+\hypertarget{class_file_a2f4b24c592c50ad086bc0e6f1a3b5b41}{Q\+String \hyperlink{class_file_a2f4b24c592c50ad086bc0e6f1a3b5b41}{file\+Path}}\label{class_file_a2f4b24c592c50ad086bc0e6f1a3b5b41}
+
+\begin{DoxyCompactList}\small\item\em file\+Path -\/ ścieżka do pliku \end{DoxyCompactList}\item 
+\hypertarget{class_file_a95208d4aefbc2f99f5c9405468409c4a}{Q\+String \hyperlink{class_file_a95208d4aefbc2f99f5c9405468409c4a}{file\+Content}}\label{class_file_a95208d4aefbc2f99f5c9405468409c4a}
+
+\begin{DoxyCompactList}\small\item\em file\+Content -\/ zwartość pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_file}{File} -\/ obiekty tej klasy przechowują informacje o pliku z którego są wczytywane dane. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_file_ac80dd9634f10f53494c4fd5265483c21}{\index{File@{File}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!File@{File}}
+\subsubsection[{get\+Content}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String File\+::get\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_file_ac80dd9634f10f53494c4fd5265483c21}
+
+
+get\+Content -\/ metoda pobiera zawartość pliku 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ zawartość pliku 
+\end{DoxyReturn}
+\hypertarget{class_file_a1fdbcf449f0e8365b3d5cf003909b1b5}{\index{File@{File}!get\+File\+Path@{get\+File\+Path}}
+\index{get\+File\+Path@{get\+File\+Path}!File@{File}}
+\subsubsection[{get\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String File\+::get\+File\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_file_a1fdbcf449f0e8365b3d5cf003909b1b5}
+
+
+get\+File\+Path -\/ metoda pobiera ścieżkę do pliku 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ ścieżka do pliku 
+\end{DoxyReturn}
+\hypertarget{class_file_a55683b67c0f7f53d4f2ee544587a1478}{\index{File@{File}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!File@{File}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String File\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_file_a55683b67c0f7f53d4f2ee544587a1478}
+
+
+get\+Name -\/ metoda pobiera nazwę pliku 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ nazwa pliku 
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_i_file}{I\+File}.
+
+\hypertarget{class_file_a38cb05c7dde38d6bd8abb62e85e42404}{\index{File@{File}!set\+Content@{set\+Content}}
+\index{set\+Content@{set\+Content}!File@{File}}
+\subsubsection[{set\+Content}]{\setlength{\rightskip}{0pt plus 5cm}void File\+::set\+Content (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{\+\_\+content}
+\end{DoxyParamCaption}
+)}}\label{class_file_a38cb05c7dde38d6bd8abb62e85e42404}
+
+
+set\+Content -\/ metoda ustawia zawartość pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+content} & -\/ zawartość pliku do ustawienia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_file_ad7216b449a5868da61388cde79070d6f}{\index{File@{File}!set\+File\+Path@{set\+File\+Path}}
+\index{set\+File\+Path@{set\+File\+Path}!File@{File}}
+\subsubsection[{set\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}void File\+::set\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{class_file_ad7216b449a5868da61388cde79070d6f}
+
+
+set\+File\+Path -\/ metoda ustawia ścieżkę do pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+path} & -\/ ścieżka do pliku do ustawienia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_file_a1a2f0af57b4cb416d07b4c7f4a1ef04a}{\index{File@{File}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!File@{File}}
+\subsubsection[{set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void File\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{class_file_a1a2f0af57b4cb416d07b4c7f4a1ef04a}
+
+
+set\+Name -\/ metoda ustawia nazwę pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+name} & -\/ nazwa pliku do ustawienia \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/file.\+h\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/file.\+cpp\end{DoxyCompactItemize}

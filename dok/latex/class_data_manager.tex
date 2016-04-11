@@ -1,0 +1,288 @@
+\hypertarget{class_data_manager}{\section{Dokumentacja klasy Data\+Manager}
+\label{class_data_manager}\index{Data\+Manager@{Data\+Manager}}
+}
+
+
+Klasa \hyperlink{class_data_manager}{Data\+Manager} -\/ obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami.  
+
+
+
+
+{\ttfamily \#include $<$datamanager.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_algorithm}{Algorithm} $\ast$ \hyperlink{class_data_manager_a8d0afcc6bd82efea1a087a77ba046df0}{get\+Current\+Algorithm} ()
+\begin{DoxyCompactList}\small\item\em get\+Current\+Algorithm -\/ metoda pobiera wskaźnik na aktualnie wybrany algorytm \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_algorithm}{Algorithm} $\ast$ $>$ \hyperlink{class_data_manager_afb85e233fe55a742241597aeb988c6ae}{get\+Algorithms} ()
+\begin{DoxyCompactList}\small\item\em get\+Algorithms -\/ metoda pobiera wskaźniki na wszystkie algorytmy \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_ac840fe3df9dcb8c7fed38c40d817fbc4}{set\+Current\+Algorithm} (int \+\_\+algorithm\+Row)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Algorithm -\/ metoda ustawia wskaźnik na aktualnie wybrany algorytm \end{DoxyCompactList}\item 
+\hyperlink{class_series}{Series} $\ast$ \hyperlink{class_data_manager_a7071330f82722bfa47994c90325c76ec}{get\+Current\+Input\+Series} ()
+\begin{DoxyCompactList}\small\item\em get\+Current\+Input\+Series -\/ metoda pobiera wskaźnik na aktualnie wybraną serię wejściową \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_series}{Series} $\ast$ $>$ \hyperlink{class_data_manager_afb4de666c7412d0d1892e7e54ed82aaf}{get\+Input\+Series} ()
+\begin{DoxyCompactList}\small\item\em get\+Input\+Series -\/ metoda pobiera wskaźniki na wszystkie serie wejściowe \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_a2c9efa56273db676e98641c1d84bbee2}{set\+Current\+Input\+Series} (int \+\_\+input\+Series\+Row)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Input\+Series -\/ metoda ustawia wskaźnik na aktualnie wybraną serię wejściową \end{DoxyCompactList}\item 
+\hyperlink{class_series}{Series} $\ast$ \hyperlink{class_data_manager_a86ad97b64097b93db9f8cd02a73c801c}{get\+Current\+Output\+Series} ()
+\begin{DoxyCompactList}\small\item\em get\+Current\+Output\+Series -\/ metoda pobiera wskaźnik na aktualnie wybraną serię wyjściową \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_series}{Series} $\ast$ $>$ \hyperlink{class_data_manager_a36454e708a2041da015549ea38877a16}{get\+Output\+Series} ()
+\begin{DoxyCompactList}\small\item\em get\+Output\+Series -\/ metoda pobiera wskaźniki na wszystkie serie wyjściowe \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_a18a047d7c27dac16ad97e0ab08ab1a11}{set\+Current\+Output\+Series} (int \+\_\+output\+Series)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Output\+Series -\/ metoda ustawia wskaźnik na aktualnie wybraną serię wyjściową \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_ac7adc63ceee86ef18b88408d536468fd}{add\+Series\+From\+File} (\hyperlink{class_i_file}{I\+File} $\ast$\+\_\+file)
+\begin{DoxyCompactList}\small\item\em add\+Series\+From\+File -\/ metoda dodaje serię z pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_ab3095e58be93fcb77a4f4814f08fb3ec}{delete\+Series} (int \+\_\+current\+Series, char \+\_\+which\+Series)
+\begin{DoxyCompactList}\small\item\em delete\+Series -\/ metoda usuwa serię \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_a1c252d92169045d9ac646dc264de9397}{add\+New\+Algorithm} (Q\+String \+\_\+name)
+\begin{DoxyCompactList}\small\item\em add\+New\+Algorithm -\/ metoda dodaje nowy algorytm \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_a2664e4d4e1026d9eccde04def2fa0278}{add\+Algorithm\+From\+File} (\hyperlink{class_i_file}{I\+File} $\ast$\+\_\+file)
+\begin{DoxyCompactList}\small\item\em add\+Algorithm\+From\+File -\/ metoda dodaje algorytm z pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_a98d1a9bb8759afe78b86a1a9c5c891fd}{delete\+Algorithm} (int \+\_\+current\+Algorithm)
+\begin{DoxyCompactList}\small\item\em delete\+Algorithm -\/ metoda usuwa algorytm \end{DoxyCompactList}\item 
+void \hyperlink{class_data_manager_afad3b8ee5ba4463d53da7406bec8e2aa}{prepare\+New\+Series} (Q\+String \+\_\+name)
+\begin{DoxyCompactList}\small\item\em prepare\+New\+Series -\/ metoda przygotowuje nową serię wyjściową \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_data_manager}{Data\+Manager} -\/ obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_data_manager_a2664e4d4e1026d9eccde04def2fa0278}{\index{Data\+Manager@{Data\+Manager}!add\+Algorithm\+From\+File@{add\+Algorithm\+From\+File}}
+\index{add\+Algorithm\+From\+File@{add\+Algorithm\+From\+File}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{add\+Algorithm\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::add\+Algorithm\+From\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+File} $\ast$}]{\+\_\+file}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a2664e4d4e1026d9eccde04def2fa0278}
+
+
+add\+Algorithm\+From\+File -\/ metoda dodaje algorytm z pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+file} & -\/ obsługiwany plik \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_a1c252d92169045d9ac646dc264de9397}{\index{Data\+Manager@{Data\+Manager}!add\+New\+Algorithm@{add\+New\+Algorithm}}
+\index{add\+New\+Algorithm@{add\+New\+Algorithm}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{add\+New\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::add\+New\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a1c252d92169045d9ac646dc264de9397}
+
+
+add\+New\+Algorithm -\/ metoda dodaje nowy algorytm 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+name} & -\/ nazwa nowego algorytmu \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_ac7adc63ceee86ef18b88408d536468fd}{\index{Data\+Manager@{Data\+Manager}!add\+Series\+From\+File@{add\+Series\+From\+File}}
+\index{add\+Series\+From\+File@{add\+Series\+From\+File}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{add\+Series\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::add\+Series\+From\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+File} $\ast$}]{\+\_\+file}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_ac7adc63ceee86ef18b88408d536468fd}
+
+
+add\+Series\+From\+File -\/ metoda dodaje serię z pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+file} & -\/ obsługiwany plik \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_a98d1a9bb8759afe78b86a1a9c5c891fd}{\index{Data\+Manager@{Data\+Manager}!delete\+Algorithm@{delete\+Algorithm}}
+\index{delete\+Algorithm@{delete\+Algorithm}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{delete\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::delete\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+current\+Algorithm}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a98d1a9bb8759afe78b86a1a9c5c891fd}
+
+
+delete\+Algorithm -\/ metoda usuwa algorytm 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+current\+Algorithm} & -\/ numer wiersza wybranego aktualnie algorytmu w okienku głównym \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_ab3095e58be93fcb77a4f4814f08fb3ec}{\index{Data\+Manager@{Data\+Manager}!delete\+Series@{delete\+Series}}
+\index{delete\+Series@{delete\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{delete\+Series}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::delete\+Series (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+current\+Series, }
+\item[{char}]{\+\_\+which\+Series}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_ab3095e58be93fcb77a4f4814f08fb3ec}
+
+
+delete\+Series -\/ metoda usuwa serię 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+current\+Series} & -\/ numer wiersza wybranej aktualnie serii wejściowej/wyjściowej w okienku głównym \\
+\hline
+{\em \+\_\+which\+Series} & -\/ parametr informujący o tym która seria jest do usunięcia\+: wejściowa czy wyjściowa \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_afb85e233fe55a742241597aeb988c6ae}{\index{Data\+Manager@{Data\+Manager}!get\+Algorithms@{get\+Algorithms}}
+\index{get\+Algorithms@{get\+Algorithms}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{get\+Algorithms}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Algorithm} $\ast$ $>$ Data\+Manager\+::get\+Algorithms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_afb85e233fe55a742241597aeb988c6ae}
+
+
+get\+Algorithms -\/ metoda pobiera wskaźniki na wszystkie algorytmy 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wektor wskaźników na algorytmy 
+\end{DoxyReturn}
+\hypertarget{class_data_manager_a8d0afcc6bd82efea1a087a77ba046df0}{\index{Data\+Manager@{Data\+Manager}!get\+Current\+Algorithm@{get\+Current\+Algorithm}}
+\index{get\+Current\+Algorithm@{get\+Current\+Algorithm}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{get\+Current\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Algorithm} $\ast$ Data\+Manager\+::get\+Current\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a8d0afcc6bd82efea1a087a77ba046df0}
+
+
+get\+Current\+Algorithm -\/ metoda pobiera wskaźnik na aktualnie wybrany algorytm 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wskaźnik do aktualnie wybranego algorytmu 
+\end{DoxyReturn}
+\hypertarget{class_data_manager_a7071330f82722bfa47994c90325c76ec}{\index{Data\+Manager@{Data\+Manager}!get\+Current\+Input\+Series@{get\+Current\+Input\+Series}}
+\index{get\+Current\+Input\+Series@{get\+Current\+Input\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{get\+Current\+Input\+Series}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Series} $\ast$ Data\+Manager\+::get\+Current\+Input\+Series (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a7071330f82722bfa47994c90325c76ec}
+
+
+get\+Current\+Input\+Series -\/ metoda pobiera wskaźnik na aktualnie wybraną serię wejściową 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wskaźni do aktualnie wybranej serii wejściowej 
+\end{DoxyReturn}
+\hypertarget{class_data_manager_a86ad97b64097b93db9f8cd02a73c801c}{\index{Data\+Manager@{Data\+Manager}!get\+Current\+Output\+Series@{get\+Current\+Output\+Series}}
+\index{get\+Current\+Output\+Series@{get\+Current\+Output\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{get\+Current\+Output\+Series}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Series} $\ast$ Data\+Manager\+::get\+Current\+Output\+Series (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a86ad97b64097b93db9f8cd02a73c801c}
+
+
+get\+Current\+Output\+Series -\/ metoda pobiera wskaźnik na aktualnie wybraną serię wyjściową 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wskaźnik do aktualnie wybranej serii wyjściowej 
+\end{DoxyReturn}
+\hypertarget{class_data_manager_afb4de666c7412d0d1892e7e54ed82aaf}{\index{Data\+Manager@{Data\+Manager}!get\+Input\+Series@{get\+Input\+Series}}
+\index{get\+Input\+Series@{get\+Input\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{get\+Input\+Series}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Series} $\ast$ $>$ Data\+Manager\+::get\+Input\+Series (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_afb4de666c7412d0d1892e7e54ed82aaf}
+
+
+get\+Input\+Series -\/ metoda pobiera wskaźniki na wszystkie serie wejściowe 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wektor wskaźników na serie wejściowe 
+\end{DoxyReturn}
+\hypertarget{class_data_manager_a36454e708a2041da015549ea38877a16}{\index{Data\+Manager@{Data\+Manager}!get\+Output\+Series@{get\+Output\+Series}}
+\index{get\+Output\+Series@{get\+Output\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{get\+Output\+Series}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Series} $\ast$ $>$ Data\+Manager\+::get\+Output\+Series (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a36454e708a2041da015549ea38877a16}
+
+
+get\+Output\+Series -\/ metoda pobiera wskaźniki na wszystkie serie wyjściowe 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wektor wskaźników na serie wyjściowe 
+\end{DoxyReturn}
+\hypertarget{class_data_manager_afad3b8ee5ba4463d53da7406bec8e2aa}{\index{Data\+Manager@{Data\+Manager}!prepare\+New\+Series@{prepare\+New\+Series}}
+\index{prepare\+New\+Series@{prepare\+New\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{prepare\+New\+Series}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::prepare\+New\+Series (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_afad3b8ee5ba4463d53da7406bec8e2aa}
+
+
+prepare\+New\+Series -\/ metoda przygotowuje nową serię wyjściową 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+name} & -\/ nazwa nowej serii \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_ac840fe3df9dcb8c7fed38c40d817fbc4}{\index{Data\+Manager@{Data\+Manager}!set\+Current\+Algorithm@{set\+Current\+Algorithm}}
+\index{set\+Current\+Algorithm@{set\+Current\+Algorithm}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{set\+Current\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::set\+Current\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+algorithm\+Row}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_ac840fe3df9dcb8c7fed38c40d817fbc4}
+
+
+set\+Current\+Algorithm -\/ metoda ustawia wskaźnik na aktualnie wybrany algorytm 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+algorithm\+Row} & -\/ numer wiersza wybranego algorytmu w okienku głównym \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_a2c9efa56273db676e98641c1d84bbee2}{\index{Data\+Manager@{Data\+Manager}!set\+Current\+Input\+Series@{set\+Current\+Input\+Series}}
+\index{set\+Current\+Input\+Series@{set\+Current\+Input\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{set\+Current\+Input\+Series}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::set\+Current\+Input\+Series (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+input\+Series\+Row}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a2c9efa56273db676e98641c1d84bbee2}
+
+
+set\+Current\+Input\+Series -\/ metoda ustawia wskaźnik na aktualnie wybraną serię wejściową 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+input\+Series\+Row} & -\/ numer wiersza wybranej serii wejściowej w okienku głównym \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_data_manager_a18a047d7c27dac16ad97e0ab08ab1a11}{\index{Data\+Manager@{Data\+Manager}!set\+Current\+Output\+Series@{set\+Current\+Output\+Series}}
+\index{set\+Current\+Output\+Series@{set\+Current\+Output\+Series}!Data\+Manager@{Data\+Manager}}
+\subsubsection[{set\+Current\+Output\+Series}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Manager\+::set\+Current\+Output\+Series (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+output\+Series}
+\end{DoxyParamCaption}
+)}}\label{class_data_manager_a18a047d7c27dac16ad97e0ab08ab1a11}
+
+
+set\+Current\+Output\+Series -\/ metoda ustawia wskaźnik na aktualnie wybraną serię wyjściową 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+output\+Series} & -\/ numer wiersza wybranej serii wyjściowej w okienku głównym \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/datamanager.\+h\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/datamanager.\+cpp\end{DoxyCompactItemize}

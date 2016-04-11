@@ -1,0 +1,143 @@
+\hypertarget{class_series}{\section{Dokumentacja klasy Series}
+\label{class_series}\index{Series@{Series}}
+}
+
+
+Klasa \hyperlink{class_series}{Series} -\/ obiekt tej klasy przechowuje informacje o serii.  
+
+
+
+
+{\ttfamily \#include $<$series.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_series_aeec7b0318147f133101233930a9fe0bd}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em get\+Name -\/ metoda pobiera nazwę serii \end{DoxyCompactList}\item 
+void \hyperlink{class_series_a45e36a2f91ffda781a2bd6ac1e42799a}{set\+Name} (Q\+String \+\_\+name)
+\begin{DoxyCompactList}\small\item\em set\+Name -\/ metoda ustawia nazwę serii \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_point}{Point} $>$ \hyperlink{class_series_acce7f1886fd9fca8a0bed0de308d3206}{get\+Points} ()
+\begin{DoxyCompactList}\small\item\em get\+Points -\/ metoda pobiera punkty wchodzące w skład serii \end{DoxyCompactList}\item 
+void \hyperlink{class_series_ae1c659538591e22f42495c281934e2a3}{set\+Points} (std\+::vector$<$ \hyperlink{class_point}{Point} $>$ \+\_\+points)
+\begin{DoxyCompactList}\small\item\em set\+Points -\/ metoda ustawia punkty dla serii \end{DoxyCompactList}\item 
+void \hyperlink{class_series_aedcbd470ac2ae2807be45c2339503991}{add\+Point} (Q\+Date\+Time \+\_\+time, double \+\_\+value, double \+\_\+reliability)
+\begin{DoxyCompactList}\small\item\em add\+Point -\/ metoda służy do dodawania punktów dla serii \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_series}{Series} $\ast$ \hyperlink{class_series_ab8c7554def83d47ed71333b48e2b7bd2}{copy} (\hyperlink{class_series}{Series} $\ast$\+\_\+series)
+\begin{DoxyCompactList}\small\item\em copy -\/ metoda kopiuje serię (kopiowanie głębokie) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_series}{Series} -\/ obiekt tej klasy przechowuje informacje o serii. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_series_aedcbd470ac2ae2807be45c2339503991}{\index{Series@{Series}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!Series@{Series}}
+\subsubsection[{add\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void Series\+::add\+Point (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{\+\_\+time, }
+\item[{double}]{\+\_\+value, }
+\item[{double}]{\+\_\+reliability}
+\end{DoxyParamCaption}
+)}}\label{class_series_aedcbd470ac2ae2807be45c2339503991}
+
+
+add\+Point -\/ metoda służy do dodawania punktów dla serii 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+time} & -\/ znacznik czasowy nowego punktu w serii \\
+\hline
+{\em \+\_\+value} & -\/ wartość pomiaru nowego punktu w serii \\
+\hline
+{\em \+\_\+reliability} & -\/ wiarygodność nowego punktu w serii \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_series_ab8c7554def83d47ed71333b48e2b7bd2}{\index{Series@{Series}!copy@{copy}}
+\index{copy@{copy}!Series@{Series}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Series} $\ast$ Series\+::copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Series} $\ast$}]{\+\_\+series}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_series_ab8c7554def83d47ed71333b48e2b7bd2}
+
+
+copy -\/ metoda kopiuje serię (kopiowanie głębokie) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+series} & -\/ seria do skopiowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ wskaźnik na nową serię 
+\end{DoxyReturn}
+\hypertarget{class_series_aeec7b0318147f133101233930a9fe0bd}{\index{Series@{Series}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Series@{Series}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Series\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_series_aeec7b0318147f133101233930a9fe0bd}
+
+
+get\+Name -\/ metoda pobiera nazwę serii 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ nazwa serii 
+\end{DoxyReturn}
+\hypertarget{class_series_acce7f1886fd9fca8a0bed0de308d3206}{\index{Series@{Series}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Series@{Series}}
+\subsubsection[{get\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Point} $>$ Series\+::get\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_series_acce7f1886fd9fca8a0bed0de308d3206}
+
+
+get\+Points -\/ metoda pobiera punkty wchodzące w skład serii 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wektor punktów wchodzących w skład serii 
+\end{DoxyReturn}
+\hypertarget{class_series_a45e36a2f91ffda781a2bd6ac1e42799a}{\index{Series@{Series}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Series@{Series}}
+\subsubsection[{set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void Series\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{class_series_a45e36a2f91ffda781a2bd6ac1e42799a}
+
+
+set\+Name -\/ metoda ustawia nazwę serii 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+name} & -\/ nazwa serii do ustawienia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_series_ae1c659538591e22f42495c281934e2a3}{\index{Series@{Series}!set\+Points@{set\+Points}}
+\index{set\+Points@{set\+Points}!Series@{Series}}
+\subsubsection[{set\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void Series\+::set\+Points (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Point} $>$}]{\+\_\+points}
+\end{DoxyParamCaption}
+)}}\label{class_series_ae1c659538591e22f42495c281934e2a3}
+
+
+set\+Points -\/ metoda ustawia punkty dla serii 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+points} & -\/ punkty do ustawienia \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/series.\+h\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/series.\+cpp\end{DoxyCompactItemize}

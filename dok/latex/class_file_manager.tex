@@ -1,0 +1,112 @@
+\hypertarget{class_file_manager}{\section{Dokumentacja klasy File\+Manager}
+\label{class_file_manager}\index{File\+Manager@{File\+Manager}}
+}
+
+
+Klasa \hyperlink{class_file_manager}{File\+Manager} -\/ obiekt tej klasy służy do obsługi plików wczytywanych do programu.  
+
+
+
+
+{\ttfamily \#include $<$filemanager.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_file}{File} $\ast$ \hyperlink{class_file_manager_aa7e765d8eab798ee2adef644e163a84a}{get\+File} ()
+\begin{DoxyCompactList}\small\item\em get\+File -\/ metoda pobiera wskaźnik na aktualnie obsługiwanego pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_file_manager_a9d03f4076a7f1d933d47809d039a6377}{set\+File} (\hyperlink{class_file}{File} $\ast$\+\_\+file)
+\begin{DoxyCompactList}\small\item\em set\+File -\/ metoda ustawia wskaźnik na aktualnie obsługiwany plik \end{DoxyCompactList}\item 
+bool \hyperlink{class_file_manager_a84ffd312c627e3e28501fd3169b3d59d}{open\+File} (char \+\_\+what\+To\+Load, Q\+String \+\_\+path)
+\begin{DoxyCompactList}\small\item\em open\+File -\/ metoda służy do otwierania pliku \end{DoxyCompactList}\item 
+bool \hyperlink{class_file_manager_a7718e386811bca53267f3cfc09a15906}{save\+File} (char \+\_\+what\+To\+Save, Q\+String \+\_\+path, \hyperlink{class_data_manager}{Data\+Manager} \&\+\_\+data\+Manager)
+\begin{DoxyCompactList}\small\item\em save\+File -\/ metoda służy do zapisywania pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_file_manager}{File\+Manager} -\/ obiekt tej klasy służy do obsługi plików wczytywanych do programu. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_file_manager_aa7e765d8eab798ee2adef644e163a84a}{\index{File\+Manager@{File\+Manager}!get\+File@{get\+File}}
+\index{get\+File@{get\+File}!File\+Manager@{File\+Manager}}
+\subsubsection[{get\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File} $\ast$ File\+Manager\+::get\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_file_manager_aa7e765d8eab798ee2adef644e163a84a}
+
+
+get\+File -\/ metoda pobiera wskaźnik na aktualnie obsługiwanego pliku 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ wskaźni do aktualnie obsługiwanego pliku 
+\end{DoxyReturn}
+\hypertarget{class_file_manager_a84ffd312c627e3e28501fd3169b3d59d}{\index{File\+Manager@{File\+Manager}!open\+File@{open\+File}}
+\index{open\+File@{open\+File}!File\+Manager@{File\+Manager}}
+\subsubsection[{open\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool File\+Manager\+::open\+File (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+what\+To\+Load, }
+\item[{Q\+String}]{\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{class_file_manager_a84ffd312c627e3e28501fd3169b3d59d}
+
+
+open\+File -\/ metoda służy do otwierania pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+what\+To\+Load} & -\/ parametr informujący o tym co jest do wczytania\+: algorytm czy seria \\
+\hline
+{\em \+\_\+path} & -\/ ścieżka pliu do odczytu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ czy poprawnie wczytano plik 
+\end{DoxyReturn}
+\hypertarget{class_file_manager_a7718e386811bca53267f3cfc09a15906}{\index{File\+Manager@{File\+Manager}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!File\+Manager@{File\+Manager}}
+\subsubsection[{save\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool File\+Manager\+::save\+File (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+what\+To\+Save, }
+\item[{Q\+String}]{\+\_\+path, }
+\item[{{\bf Data\+Manager} \&}]{\+\_\+data\+Manager}
+\end{DoxyParamCaption}
+)}}\label{class_file_manager_a7718e386811bca53267f3cfc09a15906}
+
+
+save\+File -\/ metoda służy do zapisywania pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+what\+To\+Save} & -\/ parametr informujący o tym co jest do zapisania\+: algorytm czy seria \\
+\hline
+{\em \+\_\+path} & -\/ ścieżka pliku do zapisu \\
+\hline
+{\em \+\_\+data\+Manager} & -\/ parametr niezbędny do pobrania informacji o aktualnie wybranych danych do zapisu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ czy poprawnie zapisano plik 
+\end{DoxyReturn}
+\hypertarget{class_file_manager_a9d03f4076a7f1d933d47809d039a6377}{\index{File\+Manager@{File\+Manager}!set\+File@{set\+File}}
+\index{set\+File@{set\+File}!File\+Manager@{File\+Manager}}
+\subsubsection[{set\+File}]{\setlength{\rightskip}{0pt plus 5cm}void File\+Manager\+::set\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf File} $\ast$}]{\+\_\+file}
+\end{DoxyParamCaption}
+)}}\label{class_file_manager_a9d03f4076a7f1d933d47809d039a6377}
+
+
+set\+File -\/ metoda ustawia wskaźnik na aktualnie obsługiwany plik 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+file} & -\/ plik do ustawienia \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/filemanager.\+h\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/filemanager.\+cpp\end{DoxyCompactItemize}

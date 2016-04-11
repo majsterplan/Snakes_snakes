@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Snakes, snakes: Plik źródłowy C:/Users/Marcin/Desktop/Snakes_snakes/datamanager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Snakes, snakes
+   </div>
+   <div id="projectbrief">Napisać program, który umożliwi generowanie serii danych wg algorytmu określonego przez użytkownika dla określonego przedziału i ich wyświetlanie. Algorytm ma być określany przez użytkownika w formie skryptu albo we własnym języku programowania, albo w języku Python (do wyboru jako jedna implementacja w projekcie, nie obie na raz).</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2e9d66f73b719cf1e05b9a3d97464c5c.html">Snakes_snakes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">datamanager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DATAMANAGER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DATAMANAGER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;series.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;algorithm.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;filemanager.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;ifile.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;pythoninterpreter.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;iinterpreter.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_series.html">Series</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_algorithm.html">Algorithm</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_file_manager.html">FileManager</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_i_file.html">IFile</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_i_interpreter.html">IInterpreter</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_data_manager.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_data_manager.html">DataManager</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_data_manager.html">DataManager</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_algorithm.html">Algorithm</a> * <a class="code" href="class_data_manager.html#a8d0afcc6bd82efea1a087a77ba046df0">getCurrentAlgorithm</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::vector&lt;Algorithm *&gt; <a class="code" href="class_data_manager.html#afb85e233fe55a742241597aeb988c6ae">getAlgorithms</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#ac840fe3df9dcb8c7fed38c40d817fbc4">setCurrentAlgorithm</a>(<span class="keywordtype">int</span> _algorithmRow);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_series.html">Series</a> * <a class="code" href="class_data_manager.html#a7071330f82722bfa47994c90325c76ec">getCurrentInputSeries</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;Series *&gt; <a class="code" href="class_data_manager.html#afb4de666c7412d0d1892e7e54ed82aaf">getInputSeries</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#a2c9efa56273db676e98641c1d84bbee2">setCurrentInputSeries</a>(<span class="keywordtype">int</span> _inputSeriesRow);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_series.html">Series</a> * <a class="code" href="class_data_manager.html#a86ad97b64097b93db9f8cd02a73c801c">getCurrentOutputSeries</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::vector&lt;Series *&gt; <a class="code" href="class_data_manager.html#a36454e708a2041da015549ea38877a16">getOutputSeries</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#a18a047d7c27dac16ad97e0ab08ab1a11">setCurrentOutputSeries</a>(<span class="keywordtype">int</span> _outputSeries);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#ac7adc63ceee86ef18b88408d536468fd">addSeriesFromFile</a>(<a class="code" href="class_i_file.html">IFile</a> *_file);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#ab3095e58be93fcb77a4f4814f08fb3ec">deleteSeries</a>(<span class="keywordtype">int</span> _currentSeries, <span class="keywordtype">char</span> _whichSeries);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#a1c252d92169045d9ac646dc264de9397">addNewAlgorithm</a>(QString _name);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#a2664e4d4e1026d9eccde04def2fa0278">addAlgorithmFromFile</a>(<a class="code" href="class_i_file.html">IFile</a> *_file);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#a98d1a9bb8759afe78b86a1a9c5c891fd">deleteAlgorithm</a>(<span class="keywordtype">int</span> _currentAlgorithm);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_manager.html#afad3b8ee5ba4463d53da7406bec8e2aa">prepareNewSeries</a>(QString _name);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::vector&lt;Series *&gt; inputSeries;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::vector&lt;Series *&gt; outputSeries;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    std::vector&lt;Algorithm *&gt; algorithms;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="class_series.html">Series</a> *currentInputSeries;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="class_series.html">Series</a> *currentOutputSeries;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="class_algorithm.html">Algorithm</a> *currentAlgorithm;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif // DATAMANAGER_H</span></div>
+<div class="ttc" id="class_data_manager_html_a98d1a9bb8759afe78b86a1a9c5c891fd"><div class="ttname"><a href="class_data_manager.html#a98d1a9bb8759afe78b86a1a9c5c891fd">DataManager::deleteAlgorithm</a></div><div class="ttdeci">void deleteAlgorithm(int _currentAlgorithm)</div><div class="ttdoc">deleteAlgorithm - metoda usuwa algorytm </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:111</div></div>
+<div class="ttc" id="class_data_manager_html_ac7adc63ceee86ef18b88408d536468fd"><div class="ttname"><a href="class_data_manager.html#ac7adc63ceee86ef18b88408d536468fd">DataManager::addSeriesFromFile</a></div><div class="ttdeci">void addSeriesFromFile(IFile *_file)</div><div class="ttdoc">addSeriesFromFile - metoda dodaje serię z pliku </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:64</div></div>
+<div class="ttc" id="class_data_manager_html_a2664e4d4e1026d9eccde04def2fa0278"><div class="ttname"><a href="class_data_manager.html#a2664e4d4e1026d9eccde04def2fa0278">DataManager::addAlgorithmFromFile</a></div><div class="ttdeci">void addAlgorithmFromFile(IFile *_file)</div><div class="ttdoc">addAlgorithmFromFile - metoda dodaje algorytm z pliku </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:101</div></div>
+<div class="ttc" id="class_data_manager_html_a18a047d7c27dac16ad97e0ab08ab1a11"><div class="ttname"><a href="class_data_manager.html#a18a047d7c27dac16ad97e0ab08ab1a11">DataManager::setCurrentOutputSeries</a></div><div class="ttdeci">void setCurrentOutputSeries(int _outputSeries)</div><div class="ttdoc">setCurrentOutputSeries - metoda ustawia wskaźnik na aktualnie wybraną serię wyjściową ...</div><div class="ttdef"><b>Definition:</b> datamanager.cpp:56</div></div>
+<div class="ttc" id="class_i_interpreter_html"><div class="ttname"><a href="class_i_interpreter.html">IInterpreter</a></div><div class="ttdoc">Klasa IInterpreter - interfejs dla interpreterów. </div><div class="ttdef"><b>Definition:</b> iinterpreter.h:9</div></div>
+<div class="ttc" id="class_data_manager_html_a8d0afcc6bd82efea1a087a77ba046df0"><div class="ttname"><a href="class_data_manager.html#a8d0afcc6bd82efea1a087a77ba046df0">DataManager::getCurrentAlgorithm</a></div><div class="ttdeci">Algorithm * getCurrentAlgorithm()</div><div class="ttdoc">getCurrentAlgorithm - metoda pobiera wskaźnik na aktualnie wybrany algorytm </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:10</div></div>
+<div class="ttc" id="class_data_manager_html_afad3b8ee5ba4463d53da7406bec8e2aa"><div class="ttname"><a href="class_data_manager.html#afad3b8ee5ba4463d53da7406bec8e2aa">DataManager::prepareNewSeries</a></div><div class="ttdeci">void prepareNewSeries(QString _name)</div><div class="ttdoc">prepareNewSeries - metoda przygotowuje nową serię wyjściową </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:117</div></div>
+<div class="ttc" id="class_data_manager_html_a86ad97b64097b93db9f8cd02a73c801c"><div class="ttname"><a href="class_data_manager.html#a86ad97b64097b93db9f8cd02a73c801c">DataManager::getCurrentOutputSeries</a></div><div class="ttdeci">Series * getCurrentOutputSeries()</div><div class="ttdoc">getCurrentOutputSeries - metoda pobiera wskaźnik na aktualnie wybraną serię wyjściową ...</div><div class="ttdef"><b>Definition:</b> datamanager.cpp:46</div></div>
+<div class="ttc" id="class_data_manager_html_afb85e233fe55a742241597aeb988c6ae"><div class="ttname"><a href="class_data_manager.html#afb85e233fe55a742241597aeb988c6ae">DataManager::getAlgorithms</a></div><div class="ttdeci">std::vector&lt; Algorithm * &gt; getAlgorithms()</div><div class="ttdoc">getAlgorithms - metoda pobiera wskaźniki na wszystkie algorytmy </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:15</div></div>
+<div class="ttc" id="class_data_manager_html_afb4de666c7412d0d1892e7e54ed82aaf"><div class="ttname"><a href="class_data_manager.html#afb4de666c7412d0d1892e7e54ed82aaf">DataManager::getInputSeries</a></div><div class="ttdeci">std::vector&lt; Series * &gt; getInputSeries()</div><div class="ttdoc">getInputSeries - metoda pobiera wskaźniki na wszystkie serie wejściowe </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:33</div></div>
+<div class="ttc" id="class_i_file_html"><div class="ttname"><a href="class_i_file.html">IFile</a></div><div class="ttdoc">Klasa IFile - interfejs dla różnych plików. </div><div class="ttdef"><b>Definition:</b> ifile.h:11</div></div>
+<div class="ttc" id="class_data_manager_html_ab3095e58be93fcb77a4f4814f08fb3ec"><div class="ttname"><a href="class_data_manager.html#ab3095e58be93fcb77a4f4814f08fb3ec">DataManager::deleteSeries</a></div><div class="ttdeci">void deleteSeries(int _currentSeries, char _whichSeries)</div><div class="ttdoc">deleteSeries - metoda usuwa serię </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:78</div></div>
+<div class="ttc" id="class_algorithm_html"><div class="ttname"><a href="class_algorithm.html">Algorithm</a></div><div class="ttdoc">Klasa Algorithm - obiekty tej klasy przechowują informacje o algorytmach. </div><div class="ttdef"><b>Definition:</b> algorithm.h:9</div></div>
+<div class="ttc" id="class_data_manager_html_ac840fe3df9dcb8c7fed38c40d817fbc4"><div class="ttname"><a href="class_data_manager.html#ac840fe3df9dcb8c7fed38c40d817fbc4">DataManager::setCurrentAlgorithm</a></div><div class="ttdeci">void setCurrentAlgorithm(int _algorithmRow)</div><div class="ttdoc">setCurrentAlgorithm - metoda ustawia wskaźnik na aktualnie wybrany algorytm </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:20</div></div>
+<div class="ttc" id="class_data_manager_html"><div class="ttname"><a href="class_data_manager.html">DataManager</a></div><div class="ttdoc">Klasa DataManager - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. </div><div class="ttdef"><b>Definition:</b> datamanager.h:22</div></div>
+<div class="ttc" id="class_series_html"><div class="ttname"><a href="class_series.html">Series</a></div><div class="ttdoc">Klasa Series - obiekt tej klasy przechowuje informacje o serii. </div><div class="ttdef"><b>Definition:</b> series.h:13</div></div>
+<div class="ttc" id="class_data_manager_html_a2c9efa56273db676e98641c1d84bbee2"><div class="ttname"><a href="class_data_manager.html#a2c9efa56273db676e98641c1d84bbee2">DataManager::setCurrentInputSeries</a></div><div class="ttdeci">void setCurrentInputSeries(int _inputSeriesRow)</div><div class="ttdoc">setCurrentInputSeries - metoda ustawia wskaźnik na aktualnie wybraną serię wejściową ...</div><div class="ttdef"><b>Definition:</b> datamanager.cpp:38</div></div>
+<div class="ttc" id="class_data_manager_html_a1c252d92169045d9ac646dc264de9397"><div class="ttname"><a href="class_data_manager.html#a1c252d92169045d9ac646dc264de9397">DataManager::addNewAlgorithm</a></div><div class="ttdeci">void addNewAlgorithm(QString _name)</div><div class="ttdoc">addNewAlgorithm - metoda dodaje nowy algorytm </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:92</div></div>
+<div class="ttc" id="class_data_manager_html_a7071330f82722bfa47994c90325c76ec"><div class="ttname"><a href="class_data_manager.html#a7071330f82722bfa47994c90325c76ec">DataManager::getCurrentInputSeries</a></div><div class="ttdeci">Series * getCurrentInputSeries()</div><div class="ttdoc">getCurrentInputSeries - metoda pobiera wskaźnik na aktualnie wybraną serię wejściową ...</div><div class="ttdef"><b>Definition:</b> datamanager.cpp:28</div></div>
+<div class="ttc" id="class_data_manager_html_a36454e708a2041da015549ea38877a16"><div class="ttname"><a href="class_data_manager.html#a36454e708a2041da015549ea38877a16">DataManager::getOutputSeries</a></div><div class="ttdeci">std::vector&lt; Series * &gt; getOutputSeries()</div><div class="ttdoc">getOutputSeries - metoda pobiera wskaźniki na wszystkie serie wyjściowe </div><div class="ttdef"><b>Definition:</b> datamanager.cpp:51</div></div>
+<div class="ttc" id="class_file_manager_html"><div class="ttname"><a href="class_file_manager.html">FileManager</a></div><div class="ttdoc">Klasa FileManager - obiekt tej klasy służy do obsługi plików wczytywanych do programu. </div><div class="ttdef"><b>Definition:</b> filemanager.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 14 cze 2015 11:27:37 dla Snakes, snakes programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

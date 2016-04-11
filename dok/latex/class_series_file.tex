@@ -1,0 +1,82 @@
+\hypertarget{class_series_file}{\section{Dokumentacja klasy Series\+File}
+\label{class_series_file}\index{Series\+File@{Series\+File}}
+}
+
+
+Klasa \hyperlink{class_series_file}{Series\+File} -\/ obiekty tej klasy przechowują informacje o pliku z którego jest wczytywana seria.  
+
+
+
+
+{\ttfamily \#include $<$seriesfile.\+h$>$}
+
+Diagram dziedziczenia dla Series\+File\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_series_file}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List \hyperlink{class_series_file_a343a10077b14bade1a98ae69fd47e3a9}{prepare\+Content\+To\+Set} ()
+\begin{DoxyCompactList}\small\item\em prepare\+Content\+To\+Set -\/ metoda przygotowuje zawartość pliku dla pól obiektu klasy \hyperlink{class_series}{Series} \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_series_file_a2837d5d09c7f9014852370b120b9ba81}{prepare\+Content\+To\+Save} (\hyperlink{class_data_manager}{Data\+Manager} \&\+\_\+data\+Manger, char c)
+\begin{DoxyCompactList}\small\item\em prepare\+Content\+To\+Save -\/ metoda przygotowuje skrypt do zapisu w pliu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_series_file}{Series\+File} -\/ obiekty tej klasy przechowują informacje o pliku z którego jest wczytywana seria. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_series_file_a2837d5d09c7f9014852370b120b9ba81}{\index{Series\+File@{Series\+File}!prepare\+Content\+To\+Save@{prepare\+Content\+To\+Save}}
+\index{prepare\+Content\+To\+Save@{prepare\+Content\+To\+Save}!Series\+File@{Series\+File}}
+\subsubsection[{prepare\+Content\+To\+Save}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Series\+File\+::prepare\+Content\+To\+Save (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Manager} \&}]{\+\_\+data\+Manger, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_series_file_a2837d5d09c7f9014852370b120b9ba81}
+
+
+prepare\+Content\+To\+Save -\/ metoda przygotowuje skrypt do zapisu w pliu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+data\+Manger} & -\/ parametr niezbędny do pobrania informacji o aktualnie wybranej serii \\
+\hline
+{\em c} & -\/ parametr informujący o tym co będzie zapisane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ przygotowana treść do zapisu 
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_file}{File}.
+
+\hypertarget{class_series_file_a343a10077b14bade1a98ae69fd47e3a9}{\index{Series\+File@{Series\+File}!prepare\+Content\+To\+Set@{prepare\+Content\+To\+Set}}
+\index{prepare\+Content\+To\+Set@{prepare\+Content\+To\+Set}!Series\+File@{Series\+File}}
+\subsubsection[{prepare\+Content\+To\+Set}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Series\+File\+::prepare\+Content\+To\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_series_file_a343a10077b14bade1a98ae69fd47e3a9}
+
+
+prepare\+Content\+To\+Set -\/ metoda przygotowuje zawartość pliku dla pól obiektu klasy \hyperlink{class_series}{Series} 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ przygotowana treść do ustawienia w obiecie klasy \hyperlink{class_series}{Series} 
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_file}{File}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/seriesfile.\+h\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/seriesfile.\+cpp\end{DoxyCompactItemize}

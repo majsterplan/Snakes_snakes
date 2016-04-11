@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Snakes, snakes: Plik źródłowy C:/Users/Marcin/Desktop/Snakes_snakes/series.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Snakes, snakes
+   </div>
+   <div id="projectbrief">Napisać program, który umożliwi generowanie serii danych wg algorytmu określonego przez użytkownika dla określonego przedziału i ich wyświetlanie. Algorytm ma być określany przez użytkownika w formie skryptu albo we własnym języku programowania, albo w języku Python (do wyboru jako jedna implementacja w projekcie, nie obie na raz).</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2e9d66f73b719cf1e05b9a3d97464c5c.html">Snakes_snakes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">series.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SERIES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SERIES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;point.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_point.html">Point</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_series.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_series.html">Series</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_series.html">Series</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_series.html">Series</a> * <a class="code" href="class_series.html#ab8c7554def83d47ed71333b48e2b7bd2">copy</a>(<a class="code" href="class_series.html">Series</a> *_series);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QString <a class="code" href="class_series.html#aeec7b0318147f133101233930a9fe0bd">getName</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_series.html#a45e36a2f91ffda781a2bd6ac1e42799a">setName</a>(QString _name);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector&lt;Point&gt; <a class="code" href="class_series.html#acce7f1886fd9fca8a0bed0de308d3206">getPoints</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_series.html#ae1c659538591e22f42495c281934e2a3">setPoints</a>(std::vector&lt;Point&gt; _points);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_series.html#aedcbd470ac2ae2807be45c2339503991">addPoint</a>(QDateTime _time, <span class="keywordtype">double</span> _value, <span class="keywordtype">double</span> _reliability);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString name;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::vector&lt;Point&gt; points;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // SERIES_H</span></div>
+<div class="ttc" id="class_series_html_ab8c7554def83d47ed71333b48e2b7bd2"><div class="ttname"><a href="class_series.html#ab8c7554def83d47ed71333b48e2b7bd2">Series::copy</a></div><div class="ttdeci">static Series * copy(Series *_series)</div><div class="ttdoc">copy - metoda kopiuje serię (kopiowanie głębokie) </div><div class="ttdef"><b>Definition:</b> series.cpp:7</div></div>
+<div class="ttc" id="class_series_html_a45e36a2f91ffda781a2bd6ac1e42799a"><div class="ttname"><a href="class_series.html#a45e36a2f91ffda781a2bd6ac1e42799a">Series::setName</a></div><div class="ttdeci">void setName(QString _name)</div><div class="ttdoc">setName - metoda ustawia nazwę serii </div><div class="ttdef"><b>Definition:</b> series.cpp:19</div></div>
+<div class="ttc" id="class_series_html_aedcbd470ac2ae2807be45c2339503991"><div class="ttname"><a href="class_series.html#aedcbd470ac2ae2807be45c2339503991">Series::addPoint</a></div><div class="ttdeci">void addPoint(QDateTime _time, double _value, double _reliability)</div><div class="ttdoc">addPoint - metoda służy do dodawania punktów dla serii </div><div class="ttdef"><b>Definition:</b> series.cpp:34</div></div>
+<div class="ttc" id="class_series_html_acce7f1886fd9fca8a0bed0de308d3206"><div class="ttname"><a href="class_series.html#acce7f1886fd9fca8a0bed0de308d3206">Series::getPoints</a></div><div class="ttdeci">std::vector&lt; Point &gt; getPoints()</div><div class="ttdoc">getPoints - metoda pobiera punkty wchodzące w skład serii </div><div class="ttdef"><b>Definition:</b> series.cpp:24</div></div>
+<div class="ttc" id="class_series_html_aeec7b0318147f133101233930a9fe0bd"><div class="ttname"><a href="class_series.html#aeec7b0318147f133101233930a9fe0bd">Series::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdoc">getName - metoda pobiera nazwę serii </div><div class="ttdef"><b>Definition:</b> series.cpp:14</div></div>
+<div class="ttc" id="class_series_html_ae1c659538591e22f42495c281934e2a3"><div class="ttname"><a href="class_series.html#ae1c659538591e22f42495c281934e2a3">Series::setPoints</a></div><div class="ttdeci">void setPoints(std::vector&lt; Point &gt; _points)</div><div class="ttdoc">setPoints - metoda ustawia punkty dla serii </div><div class="ttdef"><b>Definition:</b> series.cpp:29</div></div>
+<div class="ttc" id="class_series_html"><div class="ttname"><a href="class_series.html">Series</a></div><div class="ttdoc">Klasa Series - obiekt tej klasy przechowuje informacje o serii. </div><div class="ttdef"><b>Definition:</b> series.h:13</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Klasa Point - obiekty tej klasy przechowują informacje o punkcie serii. </div><div class="ttdef"><b>Definition:</b> point.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 14 cze 2015 11:27:38 dla Snakes, snakes programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

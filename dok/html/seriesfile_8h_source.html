@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Snakes, snakes: Plik źródłowy C:/Users/Marcin/Desktop/Snakes_snakes/seriesfile.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Snakes, snakes
+   </div>
+   <div id="projectbrief">Napisać program, który umożliwi generowanie serii danych wg algorytmu określonego przez użytkownika dla określonego przedziału i ich wyświetlanie. Algorytm ma być określany przez użytkownika w formie skryptu albo we własnym języku programowania, albo w języku Python (do wyboru jako jedna implementacja w projekcie, nie obie na raz).</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2e9d66f73b719cf1e05b9a3d97464c5c.html">Snakes_snakes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">seriesfile.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SERIESFILE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SERIESFILE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;datamanager.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;file.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_series_file.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_series_file.html">SeriesFile</a> : <span class="keyword">public</span> <a class="code" href="class_file.html">File</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_series_file.html">SeriesFile</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QStringList <a class="code" href="class_series_file.html#a343a10077b14bade1a98ae69fd47e3a9">prepareContentToSet</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QString <a class="code" href="class_series_file.html#a2837d5d09c7f9014852370b120b9ba81">prepareContentToSave</a>(<a class="code" href="class_data_manager.html">DataManager</a> &amp;_dataManger, <span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // SERIESFILE_H</span></div>
+<div class="ttc" id="class_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdoc">Klasa File - obiekty tej klasy przechowują informacje o pliku z którego są wczytywane dane...</div><div class="ttdef"><b>Definition:</b> file.h:10</div></div>
+<div class="ttc" id="class_series_file_html_a2837d5d09c7f9014852370b120b9ba81"><div class="ttname"><a href="class_series_file.html#a2837d5d09c7f9014852370b120b9ba81">SeriesFile::prepareContentToSave</a></div><div class="ttdeci">QString prepareContentToSave(DataManager &amp;_dataManger, char c)</div><div class="ttdoc">prepareContentToSave - metoda przygotowuje skrypt do zapisu w pliu </div><div class="ttdef"><b>Definition:</b> seriesfile.cpp:20</div></div>
+<div class="ttc" id="class_series_file_html_a343a10077b14bade1a98ae69fd47e3a9"><div class="ttname"><a href="class_series_file.html#a343a10077b14bade1a98ae69fd47e3a9">SeriesFile::prepareContentToSet</a></div><div class="ttdeci">QStringList prepareContentToSet()</div><div class="ttdoc">prepareContentToSet - metoda przygotowuje zawartość pliku dla pól obiektu klasy Series ...</div><div class="ttdef"><b>Definition:</b> seriesfile.cpp:8</div></div>
+<div class="ttc" id="class_data_manager_html"><div class="ttname"><a href="class_data_manager.html">DataManager</a></div><div class="ttdoc">Klasa DataManager - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. </div><div class="ttdef"><b>Definition:</b> datamanager.h:22</div></div>
+<div class="ttc" id="class_series_file_html"><div class="ttname"><a href="class_series_file.html">SeriesFile</a></div><div class="ttdoc">Klasa SeriesFile - obiekty tej klasy przechowują informacje o pliku z którego jest wczytywana seria...</div><div class="ttdef"><b>Definition:</b> seriesfile.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 14 cze 2015 11:27:38 dla Snakes, snakes programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

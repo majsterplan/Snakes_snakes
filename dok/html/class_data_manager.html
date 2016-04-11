@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Snakes, snakes: Dokumentacja klasy DataManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Snakes, snakes
+   </div>
+   <div id="projectbrief">Napisać program, który umożliwi generowanie serii danych wg algorytmu określonego przez użytkownika dla określonego przedziału i ich wyświetlanie. Algorytm ma być określany przez użytkownika w formie skryptu albo we własnym języku programowania, albo w języku Python (do wyboru jako jedna implementacja w projekcie, nie obie na raz).</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_data_manager-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy DataManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="class_data_manager.html" title="Klasa DataManager - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. ">DataManager</a> - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami.  
+ <a href="class_data_manager.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="datamanager_8h_source.html">datamanager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a8d0afcc6bd82efea1a087a77ba046df0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm.html">Algorithm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a8d0afcc6bd82efea1a087a77ba046df0">getCurrentAlgorithm</a> ()</td></tr>
+<tr class="memdesc:a8d0afcc6bd82efea1a087a77ba046df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentAlgorithm - metoda pobiera wskaźnik na aktualnie wybrany algorytm  <a href="#a8d0afcc6bd82efea1a087a77ba046df0">Więcej...</a><br /></td></tr>
+<tr class="separator:a8d0afcc6bd82efea1a087a77ba046df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb85e233fe55a742241597aeb988c6ae"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_algorithm.html">Algorithm</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#afb85e233fe55a742241597aeb988c6ae">getAlgorithms</a> ()</td></tr>
+<tr class="memdesc:afb85e233fe55a742241597aeb988c6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">getAlgorithms - metoda pobiera wskaźniki na wszystkie algorytmy  <a href="#afb85e233fe55a742241597aeb988c6ae">Więcej...</a><br /></td></tr>
+<tr class="separator:afb85e233fe55a742241597aeb988c6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac840fe3df9dcb8c7fed38c40d817fbc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#ac840fe3df9dcb8c7fed38c40d817fbc4">setCurrentAlgorithm</a> (int _algorithmRow)</td></tr>
+<tr class="memdesc:ac840fe3df9dcb8c7fed38c40d817fbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentAlgorithm - metoda ustawia wskaźnik na aktualnie wybrany algorytm  <a href="#ac840fe3df9dcb8c7fed38c40d817fbc4">Więcej...</a><br /></td></tr>
+<tr class="separator:ac840fe3df9dcb8c7fed38c40d817fbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7071330f82722bfa47994c90325c76ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_series.html">Series</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a7071330f82722bfa47994c90325c76ec">getCurrentInputSeries</a> ()</td></tr>
+<tr class="memdesc:a7071330f82722bfa47994c90325c76ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentInputSeries - metoda pobiera wskaźnik na aktualnie wybraną serię wejściową  <a href="#a7071330f82722bfa47994c90325c76ec">Więcej...</a><br /></td></tr>
+<tr class="separator:a7071330f82722bfa47994c90325c76ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4de666c7412d0d1892e7e54ed82aaf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_series.html">Series</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#afb4de666c7412d0d1892e7e54ed82aaf">getInputSeries</a> ()</td></tr>
+<tr class="memdesc:afb4de666c7412d0d1892e7e54ed82aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">getInputSeries - metoda pobiera wskaźniki na wszystkie serie wejściowe  <a href="#afb4de666c7412d0d1892e7e54ed82aaf">Więcej...</a><br /></td></tr>
+<tr class="separator:afb4de666c7412d0d1892e7e54ed82aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9efa56273db676e98641c1d84bbee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a2c9efa56273db676e98641c1d84bbee2">setCurrentInputSeries</a> (int _inputSeriesRow)</td></tr>
+<tr class="memdesc:a2c9efa56273db676e98641c1d84bbee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentInputSeries - metoda ustawia wskaźnik na aktualnie wybraną serię wejściową  <a href="#a2c9efa56273db676e98641c1d84bbee2">Więcej...</a><br /></td></tr>
+<tr class="separator:a2c9efa56273db676e98641c1d84bbee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ad97b64097b93db9f8cd02a73c801c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_series.html">Series</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a86ad97b64097b93db9f8cd02a73c801c">getCurrentOutputSeries</a> ()</td></tr>
+<tr class="memdesc:a86ad97b64097b93db9f8cd02a73c801c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentOutputSeries - metoda pobiera wskaźnik na aktualnie wybraną serię wyjściową  <a href="#a86ad97b64097b93db9f8cd02a73c801c">Więcej...</a><br /></td></tr>
+<tr class="separator:a86ad97b64097b93db9f8cd02a73c801c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36454e708a2041da015549ea38877a16"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_series.html">Series</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a36454e708a2041da015549ea38877a16">getOutputSeries</a> ()</td></tr>
+<tr class="memdesc:a36454e708a2041da015549ea38877a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">getOutputSeries - metoda pobiera wskaźniki na wszystkie serie wyjściowe  <a href="#a36454e708a2041da015549ea38877a16">Więcej...</a><br /></td></tr>
+<tr class="separator:a36454e708a2041da015549ea38877a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a047d7c27dac16ad97e0ab08ab1a11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a18a047d7c27dac16ad97e0ab08ab1a11">setCurrentOutputSeries</a> (int _outputSeries)</td></tr>
+<tr class="memdesc:a18a047d7c27dac16ad97e0ab08ab1a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentOutputSeries - metoda ustawia wskaźnik na aktualnie wybraną serię wyjściową  <a href="#a18a047d7c27dac16ad97e0ab08ab1a11">Więcej...</a><br /></td></tr>
+<tr class="separator:a18a047d7c27dac16ad97e0ab08ab1a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7adc63ceee86ef18b88408d536468fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#ac7adc63ceee86ef18b88408d536468fd">addSeriesFromFile</a> (<a class="el" href="class_i_file.html">IFile</a> *_file)</td></tr>
+<tr class="memdesc:ac7adc63ceee86ef18b88408d536468fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">addSeriesFromFile - metoda dodaje serię z pliku  <a href="#ac7adc63ceee86ef18b88408d536468fd">Więcej...</a><br /></td></tr>
+<tr class="separator:ac7adc63ceee86ef18b88408d536468fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3095e58be93fcb77a4f4814f08fb3ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#ab3095e58be93fcb77a4f4814f08fb3ec">deleteSeries</a> (int _currentSeries, char _whichSeries)</td></tr>
+<tr class="memdesc:ab3095e58be93fcb77a4f4814f08fb3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleteSeries - metoda usuwa serię  <a href="#ab3095e58be93fcb77a4f4814f08fb3ec">Więcej...</a><br /></td></tr>
+<tr class="separator:ab3095e58be93fcb77a4f4814f08fb3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c252d92169045d9ac646dc264de9397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a1c252d92169045d9ac646dc264de9397">addNewAlgorithm</a> (QString _name)</td></tr>
+<tr class="memdesc:a1c252d92169045d9ac646dc264de9397"><td class="mdescLeft">&#160;</td><td class="mdescRight">addNewAlgorithm - metoda dodaje nowy algorytm  <a href="#a1c252d92169045d9ac646dc264de9397">Więcej...</a><br /></td></tr>
+<tr class="separator:a1c252d92169045d9ac646dc264de9397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2664e4d4e1026d9eccde04def2fa0278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a2664e4d4e1026d9eccde04def2fa0278">addAlgorithmFromFile</a> (<a class="el" href="class_i_file.html">IFile</a> *_file)</td></tr>
+<tr class="memdesc:a2664e4d4e1026d9eccde04def2fa0278"><td class="mdescLeft">&#160;</td><td class="mdescRight">addAlgorithmFromFile - metoda dodaje algorytm z pliku  <a href="#a2664e4d4e1026d9eccde04def2fa0278">Więcej...</a><br /></td></tr>
+<tr class="separator:a2664e4d4e1026d9eccde04def2fa0278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d1a9bb8759afe78b86a1a9c5c891fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a98d1a9bb8759afe78b86a1a9c5c891fd">deleteAlgorithm</a> (int _currentAlgorithm)</td></tr>
+<tr class="memdesc:a98d1a9bb8759afe78b86a1a9c5c891fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleteAlgorithm - metoda usuwa algorytm  <a href="#a98d1a9bb8759afe78b86a1a9c5c891fd">Więcej...</a><br /></td></tr>
+<tr class="separator:a98d1a9bb8759afe78b86a1a9c5c891fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad3b8ee5ba4463d53da7406bec8e2aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#afad3b8ee5ba4463d53da7406bec8e2aa">prepareNewSeries</a> (QString _name)</td></tr>
+<tr class="memdesc:afad3b8ee5ba4463d53da7406bec8e2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepareNewSeries - metoda przygotowuje nową serię wyjściową  <a href="#afad3b8ee5ba4463d53da7406bec8e2aa">Więcej...</a><br /></td></tr>
+<tr class="separator:afad3b8ee5ba4463d53da7406bec8e2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa <a class="el" href="class_data_manager.html" title="Klasa DataManager - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. ">DataManager</a> - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a2664e4d4e1026d9eccde04def2fa0278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::addAlgorithmFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_file.html">IFile</a> *&#160;</td>
+          <td class="paramname"><em>_file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addAlgorithmFromFile - metoda dodaje algorytm z pliku </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_file</td><td>- obsługiwany plik </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c252d92169045d9ac646dc264de9397"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::addNewAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addNewAlgorithm - metoda dodaje nowy algorytm </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_name</td><td>- nazwa nowego algorytmu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7adc63ceee86ef18b88408d536468fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::addSeriesFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_file.html">IFile</a> *&#160;</td>
+          <td class="paramname"><em>_file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addSeriesFromFile - metoda dodaje serię z pliku </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_file</td><td>- obsługiwany plik </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a98d1a9bb8759afe78b86a1a9c5c891fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::deleteAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_currentAlgorithm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deleteAlgorithm - metoda usuwa algorytm </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_currentAlgorithm</td><td>- numer wiersza wybranego aktualnie algorytmu w okienku głównym </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3095e58be93fcb77a4f4814f08fb3ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::deleteSeries </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_currentSeries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>_whichSeries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deleteSeries - metoda usuwa serię </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_currentSeries</td><td>- numer wiersza wybranej aktualnie serii wejściowej/wyjściowej w okienku głównym </td></tr>
+    <tr><td class="paramname">_whichSeries</td><td>- parametr informujący o tym która seria jest do usunięcia: wejściowa czy wyjściowa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afb85e233fe55a742241597aeb988c6ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_algorithm.html">Algorithm</a> * &gt; DataManager::getAlgorithms </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getAlgorithms - metoda pobiera wskaźniki na wszystkie algorytmy </p>
+<dl class="section return"><dt>Zwraca</dt><dd>- wektor wskaźników na algorytmy </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d0afcc6bd82efea1a087a77ba046df0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm.html">Algorithm</a> * DataManager::getCurrentAlgorithm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getCurrentAlgorithm - metoda pobiera wskaźnik na aktualnie wybrany algorytm </p>
+<dl class="section return"><dt>Zwraca</dt><dd>- wskaźnik do aktualnie wybranego algorytmu </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7071330f82722bfa47994c90325c76ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_series.html">Series</a> * DataManager::getCurrentInputSeries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getCurrentInputSeries - metoda pobiera wskaźnik na aktualnie wybraną serię wejściową </p>
+<dl class="section return"><dt>Zwraca</dt><dd>- wskaźni do aktualnie wybranej serii wejściowej </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86ad97b64097b93db9f8cd02a73c801c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_series.html">Series</a> * DataManager::getCurrentOutputSeries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getCurrentOutputSeries - metoda pobiera wskaźnik na aktualnie wybraną serię wyjściową </p>
+<dl class="section return"><dt>Zwraca</dt><dd>- wskaźnik do aktualnie wybranej serii wyjściowej </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afb4de666c7412d0d1892e7e54ed82aaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_series.html">Series</a> * &gt; DataManager::getInputSeries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getInputSeries - metoda pobiera wskaźniki na wszystkie serie wejściowe </p>
+<dl class="section return"><dt>Zwraca</dt><dd>- wektor wskaźników na serie wejściowe </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a36454e708a2041da015549ea38877a16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_series.html">Series</a> * &gt; DataManager::getOutputSeries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getOutputSeries - metoda pobiera wskaźniki na wszystkie serie wyjściowe </p>
+<dl class="section return"><dt>Zwraca</dt><dd>- wektor wskaźników na serie wyjściowe </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afad3b8ee5ba4463d53da7406bec8e2aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::prepareNewSeries </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepareNewSeries - metoda przygotowuje nową serię wyjściową </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_name</td><td>- nazwa nowej serii </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac840fe3df9dcb8c7fed38c40d817fbc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::setCurrentAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_algorithmRow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setCurrentAlgorithm - metoda ustawia wskaźnik na aktualnie wybrany algorytm </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_algorithmRow</td><td>- numer wiersza wybranego algorytmu w okienku głównym </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c9efa56273db676e98641c1d84bbee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::setCurrentInputSeries </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_inputSeriesRow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setCurrentInputSeries - metoda ustawia wskaźnik na aktualnie wybraną serię wejściową </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_inputSeriesRow</td><td>- numer wiersza wybranej serii wejściowej w okienku głównym </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a18a047d7c27dac16ad97e0ab08ab1a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager::setCurrentOutputSeries </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_outputSeries</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setCurrentOutputSeries - metoda ustawia wskaźnik na aktualnie wybraną serię wyjściową </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_outputSeries</td><td>- numer wiersza wybranej serii wyjściowej w okienku głównym </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>C:/Users/Marcin/Desktop/Snakes_snakes/<a class="el" href="datamanager_8h_source.html">datamanager.h</a></li>
+<li>C:/Users/Marcin/Desktop/Snakes_snakes/datamanager.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 14 cze 2015 11:27:38 dla Snakes, snakes programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

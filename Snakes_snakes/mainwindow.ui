@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>884</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Snakes, snakes...</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_Lista_dostepnych_serii_wejsciowych">
+        <property name="text">
+         <string>Lista dostępnych serii wejściowych:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="series"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Punkty_serii">
+        <property name="text">
+         <string>Punkty serii:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="points">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Czas</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Wartość</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Wiarygodność</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_Lista_dostepnych_serii_wyjsciowych">
+        <property name="text">
+         <string>Lista dostępnych serii wyjściowych:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="series_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Punkty_serii_2">
+        <property name="text">
+         <string>Punkty serii:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="points_2">
+        <column>
+         <property name="text">
+          <string>Czas</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Wartość</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Wiarygodność</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_Lista_dostepnych_algorytmow">
+        <property name="text">
+         <string>Lista dostępnych algorytmów:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="algorithms"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_Nazwa_nowego_algorytmu">
+          <property name="text">
+           <string>Nazwa nowego algorytmu:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="new_algorithm_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Dodaj_algorytm">
+        <property name="text">
+         <string>Dodaj algorytm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Skrypt">
+        <property name="text">
+         <string>Skrypt:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="script">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_Nazwa_nowej_serii">
+          <property name="text">
+           <string>Nazwa nowej serii:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="new_series_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Przetwarzaj">
+        <property name="text">
+         <string>Przetwarzaj!</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_errors">
+      <property name="text">
+       <string>Errors</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>884</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="loadSeries"/>
+    <addaction name="loadAlgorithm"/>
+    <addaction name="separator"/>
+    <addaction name="saveCurrentInputSeries"/>
+    <addaction name="saveCurrentOutputSeries"/>
+    <addaction name="saveCurrentAlgorithm"/>
+    <addaction name="separator"/>
+    <addaction name="deleteCurrentInputSeries"/>
+    <addaction name="deleteCurrentOutputSeries"/>
+    <addaction name="deleteCurrentAlgorithm"/>
+    <addaction name="separator"/>
+    <addaction name="end"/>
+   </widget>
+   <addaction name="menuPlik"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="loadAlgorithm">
+   <property name="text">
+    <string>Wczytaj algorytm z pliku...</string>
+   </property>
+  </action>
+  <action name="saveCurrentOutputSeries">
+   <property name="text">
+    <string>Zapisz bieżącą serię wyjściową do pliku...</string>
+   </property>
+  </action>
+  <action name="deleteCurrentInputSeries">
+   <property name="text">
+    <string>Usuń bieżącą serię wejściową...</string>
+   </property>
+  </action>
+  <action name="deleteCurrentAlgorithm">
+   <property name="text">
+    <string>Usuń bieżący algorytm...</string>
+   </property>
+  </action>
+  <action name="loadSeries">
+   <property name="text">
+    <string>Wczytaj serię z pliku...</string>
+   </property>
+  </action>
+  <action name="saveCurrentAlgorithm">
+   <property name="text">
+    <string>Zapisz bieżący algorytm do pliku...</string>
+   </property>
+  </action>
+  <action name="deleteCurrentOutputSeries">
+   <property name="text">
+    <string>Usuń bieżącą serię wyjściową...</string>
+   </property>
+  </action>
+  <action name="saveCurrentInputSeries">
+   <property name="text">
+    <string>Zapisz bieżącą serię wejściową do pliku</string>
+   </property>
+  </action>
+  <action name="end">
+   <property name="text">
+    <string>Zakończ</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

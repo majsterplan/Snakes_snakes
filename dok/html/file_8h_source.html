@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Snakes, snakes: Plik źródłowy C:/Users/Marcin/Desktop/Snakes_snakes/file.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Snakes, snakes
+   </div>
+   <div id="projectbrief">Napisać program, który umożliwi generowanie serii danych wg algorytmu określonego przez użytkownika dla określonego przedziału i ich wyświetlanie. Algorytm ma być określany przez użytkownika w formie skryptu albo we własnym języku programowania, albo w języku Python (do wyboru jako jedna implementacja w projekcie, nie obie na raz).</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2e9d66f73b719cf1e05b9a3d97464c5c.html">Snakes_snakes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">file.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FILE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FILE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;ifile.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_file.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file.html">File</a> : <span class="keyword">public</span> <a class="code" href="class_i_file.html">IFile</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_file.html">File</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_file.html">File</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QString <a class="code" href="class_file.html#a55683b67c0f7f53d4f2ee544587a1478">getName</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file.html#a1a2f0af57b4cb416d07b4c7f4a1ef04a">setName</a>(QString _name);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QString <a class="code" href="class_file.html#a1fdbcf449f0e8365b3d5cf003909b1b5">getFilePath</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file.html#ad7216b449a5868da61388cde79070d6f">setFilePath</a>(QString _path);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QString <a class="code" href="class_file.html#ac80dd9634f10f53494c4fd5265483c21">getContent</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file.html#a38cb05c7dde38d6bd8abb62e85e42404">setContent</a>(QString _content);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> QStringList prepareContentToSet() = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> QString prepareContentToSave(<a class="code" href="class_data_manager.html">DataManager</a> &amp;_dataManger, <span class="keywordtype">char</span> c) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_file.html#ad5ee1de5d6d6c5b792f3b357993f08fc">   58</a></span>&#160;    QString <a class="code" href="class_file.html#ad5ee1de5d6d6c5b792f3b357993f08fc">fileName</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_file.html#a2f4b24c592c50ad086bc0e6f1a3b5b41">   63</a></span>&#160;    QString <a class="code" href="class_file.html#a2f4b24c592c50ad086bc0e6f1a3b5b41">filePath</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_file.html#a95208d4aefbc2f99f5c9405468409c4a">   68</a></span>&#160;    QString <a class="code" href="class_file.html#a95208d4aefbc2f99f5c9405468409c4a">fileContent</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // FILE_H</span></div>
+<div class="ttc" id="class_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdoc">Klasa File - obiekty tej klasy przechowują informacje o pliku z którego są wczytywane dane...</div><div class="ttdef"><b>Definition:</b> file.h:10</div></div>
+<div class="ttc" id="class_file_html_a55683b67c0f7f53d4f2ee544587a1478"><div class="ttname"><a href="class_file.html#a55683b67c0f7f53d4f2ee544587a1478">File::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdoc">getName - metoda pobiera nazwę pliku </div><div class="ttdef"><b>Definition:</b> file.cpp:14</div></div>
+<div class="ttc" id="class_file_html_a1fdbcf449f0e8365b3d5cf003909b1b5"><div class="ttname"><a href="class_file.html#a1fdbcf449f0e8365b3d5cf003909b1b5">File::getFilePath</a></div><div class="ttdeci">QString getFilePath()</div><div class="ttdoc">getFilePath - metoda pobiera ścieżkę do pliku </div><div class="ttdef"><b>Definition:</b> file.cpp:24</div></div>
+<div class="ttc" id="class_i_file_html"><div class="ttname"><a href="class_i_file.html">IFile</a></div><div class="ttdoc">Klasa IFile - interfejs dla różnych plików. </div><div class="ttdef"><b>Definition:</b> ifile.h:11</div></div>
+<div class="ttc" id="class_file_html_a95208d4aefbc2f99f5c9405468409c4a"><div class="ttname"><a href="class_file.html#a95208d4aefbc2f99f5c9405468409c4a">File::fileContent</a></div><div class="ttdeci">QString fileContent</div><div class="ttdoc">fileContent - zwartość pliku </div><div class="ttdef"><b>Definition:</b> file.h:68</div></div>
+<div class="ttc" id="class_file_html_ad5ee1de5d6d6c5b792f3b357993f08fc"><div class="ttname"><a href="class_file.html#ad5ee1de5d6d6c5b792f3b357993f08fc">File::fileName</a></div><div class="ttdeci">QString fileName</div><div class="ttdoc">fileName - nazwa pliku </div><div class="ttdef"><b>Definition:</b> file.h:58</div></div>
+<div class="ttc" id="class_file_html_ad7216b449a5868da61388cde79070d6f"><div class="ttname"><a href="class_file.html#ad7216b449a5868da61388cde79070d6f">File::setFilePath</a></div><div class="ttdeci">void setFilePath(QString _path)</div><div class="ttdoc">setFilePath - metoda ustawia ścieżkę do pliku </div><div class="ttdef"><b>Definition:</b> file.cpp:29</div></div>
+<div class="ttc" id="class_file_html_ac80dd9634f10f53494c4fd5265483c21"><div class="ttname"><a href="class_file.html#ac80dd9634f10f53494c4fd5265483c21">File::getContent</a></div><div class="ttdeci">QString getContent()</div><div class="ttdoc">getContent - metoda pobiera zawartość pliku </div><div class="ttdef"><b>Definition:</b> file.cpp:34</div></div>
+<div class="ttc" id="class_data_manager_html"><div class="ttname"><a href="class_data_manager.html">DataManager</a></div><div class="ttdoc">Klasa DataManager - obiekt tej klasy zarządza przetwarzanymi w programie danymi, tj. algorytmami i seriami. </div><div class="ttdef"><b>Definition:</b> datamanager.h:22</div></div>
+<div class="ttc" id="class_file_html_a38cb05c7dde38d6bd8abb62e85e42404"><div class="ttname"><a href="class_file.html#a38cb05c7dde38d6bd8abb62e85e42404">File::setContent</a></div><div class="ttdeci">void setContent(QString _content)</div><div class="ttdoc">setContent - metoda ustawia zawartość pliku </div><div class="ttdef"><b>Definition:</b> file.cpp:39</div></div>
+<div class="ttc" id="class_file_html_a1a2f0af57b4cb416d07b4c7f4a1ef04a"><div class="ttname"><a href="class_file.html#a1a2f0af57b4cb416d07b4c7f4a1ef04a">File::setName</a></div><div class="ttdeci">void setName(QString _name)</div><div class="ttdoc">setName - metoda ustawia nazwę pliku </div><div class="ttdef"><b>Definition:</b> file.cpp:19</div></div>
+<div class="ttc" id="class_file_html_a2f4b24c592c50ad086bc0e6f1a3b5b41"><div class="ttname"><a href="class_file.html#a2f4b24c592c50ad086bc0e6f1a3b5b41">File::filePath</a></div><div class="ttdeci">QString filePath</div><div class="ttdoc">filePath - ścieżka do pliku </div><div class="ttdef"><b>Definition:</b> file.h:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 14 cze 2015 11:27:37 dla Snakes, snakes programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

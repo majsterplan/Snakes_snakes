@@ -1,0 +1,82 @@
+\hypertarget{class_algorithm_file}{\section{Dokumentacja klasy Algorithm\+File}
+\label{class_algorithm_file}\index{Algorithm\+File@{Algorithm\+File}}
+}
+
+
+Klasa \hyperlink{class_algorithm_file}{Algorithm\+File} -\/ obiekty tej klasy przechowują informacje o pliku z którego jest wczytywany algorytm.  
+
+
+
+
+{\ttfamily \#include $<$algorithmfile.\+h$>$}
+
+Diagram dziedziczenia dla Algorithm\+File\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_algorithm_file}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List \hyperlink{class_algorithm_file_aad65cdb6b287b17fed79d2419a0a38de}{prepare\+Content\+To\+Set} ()
+\begin{DoxyCompactList}\small\item\em prepare\+Content\+To\+Set -\/ metoda przygotowuje zawartość pliku dla pola skrypt obiektu klasy \hyperlink{class_algorithm}{Algorithm} \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_algorithm_file_ad61d9a5c9f537b8c0c985fb0810fc6fb}{prepare\+Content\+To\+Save} (\hyperlink{class_data_manager}{Data\+Manager} \&\+\_\+data\+Manager, char c)
+\begin{DoxyCompactList}\small\item\em prepare\+Content\+To\+Save -\/ metoda przygotowuje skrypt do zapisu w pliu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_algorithm_file}{Algorithm\+File} -\/ obiekty tej klasy przechowują informacje o pliku z którego jest wczytywany algorytm. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_algorithm_file_ad61d9a5c9f537b8c0c985fb0810fc6fb}{\index{Algorithm\+File@{Algorithm\+File}!prepare\+Content\+To\+Save@{prepare\+Content\+To\+Save}}
+\index{prepare\+Content\+To\+Save@{prepare\+Content\+To\+Save}!Algorithm\+File@{Algorithm\+File}}
+\subsubsection[{prepare\+Content\+To\+Save}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Algorithm\+File\+::prepare\+Content\+To\+Save (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Manager} \&}]{\+\_\+data\+Manager, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_algorithm_file_ad61d9a5c9f537b8c0c985fb0810fc6fb}
+
+
+prepare\+Content\+To\+Save -\/ metoda przygotowuje skrypt do zapisu w pliu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+data\+Manager} & -\/ parametr niezbędny do pobrania informacji o aktualnie wybranym algorytmie \\
+\hline
+{\em c} & -\/ parametr informujący o tym co będzie zapisane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ przygotowana treść do zapisu 
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_file}{File}.
+
+\hypertarget{class_algorithm_file_aad65cdb6b287b17fed79d2419a0a38de}{\index{Algorithm\+File@{Algorithm\+File}!prepare\+Content\+To\+Set@{prepare\+Content\+To\+Set}}
+\index{prepare\+Content\+To\+Set@{prepare\+Content\+To\+Set}!Algorithm\+File@{Algorithm\+File}}
+\subsubsection[{prepare\+Content\+To\+Set}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Algorithm\+File\+::prepare\+Content\+To\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_algorithm_file_aad65cdb6b287b17fed79d2419a0a38de}
+
+
+prepare\+Content\+To\+Set -\/ metoda przygotowuje zawartość pliku dla pola skrypt obiektu klasy \hyperlink{class_algorithm}{Algorithm} 
+
+\begin{DoxyReturn}{Zwraca}
+-\/ przygotowana treść do ustawienia w obiecie klasy \hyperlink{class_algorithm}{Algorithm} 
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_file}{File}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/algorithmfile.\+h\item 
+C\+:/\+Users/\+Marcin/\+Desktop/\+Snakes\+\_\+snakes/algorithmfile.\+cpp\end{DoxyCompactItemize}
