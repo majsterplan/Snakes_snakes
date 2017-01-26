@@ -7,7 +7,7 @@ Series::Series()
 Series *Series::copy(Series *_series)
 {
     Series *s = new Series;
-    s->setPoints(_series->getPoints());
+    s->points = _series->points;
     return s;
 }
 
